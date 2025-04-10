@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GUATAPÉ</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="contenedor-principal">
+    <div class="titulo">
+      <h1>Guatapé</h1>
+      <img class="imagen" src="79C3D960-6D04-48E3-B5D7-7A0600592D7E-scaled.webp" alt="Imagen de Guatapé">
+    </div>
+
+    <!-- Descripción visible -->
+    <div class="descripcion">
+      <h2>Descripción</h2>
+      <p>
+        Guatapé es un pintoresco pueblo destacado por su vibrante arquitectura, con casas decoradas con coloridos zócalos que reflejan escenas tradicionales. Su atmósfera tranquila y su paisaje cautivador lo convierten en un lugar encantador.
+      </p>
+    </div>
+
+    <!-- Botón para mostrar información adicional -->
+    <div class="boton-info">
+      <button onclick="mostrarInfo()">Información</button>
+    </div>
+
+    <!-- Contenido colapsable -->
+    <div class="info-extra" id="infoGuatape" style="display: none;">
+      <ul>
+        <li>
+          Su ubicación está en el departamento de Antioquia, en el oriente antioqueño a aproximadamente 2 horas de Medellín a orillas del embalse del Peñol.
+        </li>
+        <li>
+          Su clima es perfecto para un fin de semana soleado.
+        </li>
+      </ul>
+
+      <h3>Actividades</h3>
+      <ul>
+        <li>
+          Las actividades para hacer en Guatapé son varias: visitar la piedra del Peñol, disfrutar del embalse, y pasear por el pueblo colorido.
+        </li>
+        <li>
+          También puedes practicar deportes como natación, buceo, pesca y senderismo.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function mostrarInfo() {
+      const info = document.getElementById("infoGuatape");
+      if (info.style.display === "none") {
+        info.style.display = "block";
+      } else {
+        info.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
